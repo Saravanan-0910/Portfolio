@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#0d171c;
+    color: aliceblue;
+}
+
+ /* ---------header-------------------- */
+.name{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.name h1{
+ color: aqua;
+}
+.name span{
+    color: whitesmoke;
+    font-size: 50px;
+}
+/* ----------------nav-------------------- */
+.container{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+    
+}
+ nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+} 
+nav ul li a:hover{
+    color: aqua;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: wheat;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition-duration: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+} 
+
+.header-text {
+    color: aqua;
+    margin-top:5%;
+    
+}
+.header-text p{
+    color: antiquewhite;
+    font-size:xx-large;
+}
+.header-text h1{
+    color: white;
+    /* margin-top: 10px; */
+    font-size: 40px;
+}
+.header-text span{
+    color: aqua;
+}
+.photo{
+    margin: 10px;
+    width: 390px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 20%;   
+    
+}
+.btn1 button{
+    width: 130px;
+    height: 45px;
+    background: aqua;
+    border: 2px solid aqua;
+    cursor: pointer;
+    border-radius:15px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin:1px;
+}
+.btn1 a{
+   color: black;
+   text-decoration: none;
+}
+.btn1 a:hover{
+    color: azure;
+}
+
+
+/* ---------------------------------about---------------------------- */
+.abtme{
+    color:aqua;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+} 
+               /* ------------------para-------------- */
+.abt-text .para{
+   padding: 30px;
+   font-size: 20px;
+}
+
+/* ------------------------------------skills----------------------------- */
+#doned{
+padding: 40px;
+font-size:20px;
+
+}
+#doned h3{
+    color: aqua;
+}
+#doned h3:hover{
+    color: aliceblue;
+}
+.skill{
+    padding: 10px;
+}
+.Education{
+    padding: 10px;
+}
+/* ----------------portfolio------------------ */
+.port{
+    margin: 10px;
+}
+ .port h1{
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.folio p{
+    padding: 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#port{
+ padding: 30px 0;
+}
+#port-li .lists{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+#port-li .lists h1{
+    color: aqua;
+}
+#port-li .lists h2,p{
+    color:white;
+    
+
+}
+#port-li .lists div{
+  
+    background-color: rgb(30, 41, 41);
+    border-radius: 5%;
+    height: 250px;
+    padding: 40px;
+   
+}
+#port-li .lists div a{
+   color:  aqua;
+   text-decoration: none;
+}
+
+
+/* -------------------contact--------------/ */
+#Contact h1{
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact{
+    margin: 10px;
+}
+.icons1{
+    
+    padding: 15px;
+}
+.icons1 p i{
+    color: aqua;
+}
+
+.icons1 span{
+    color: white;
+    font-size: 18px;
+}
+/* icons-2-------------------- */
+.icons-2{
+   margin: 5px;
+   width: 170px;
+   display: flex;
+   justify-content: space-evenly;
+}
+.icons-2 a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius:50% ;
+    font-size: 15px;
+    color: aqua;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+.icons-2 a:hover{
+    color: black;
+}
+.icons-2 a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:aqua ;
+    z-index: -1;
+    transition: .5s;
+}
+.icons-2 a:hover:before{
+    width: 100%;
+}
+.divform form{
+    width: 50%;
+}
+form input,form textarea{
+    margin: 8px;
+}
+form input,form textarea{
+    width: 100%; 
+    border: 0;
+    /* outline: none; */
+    background-color: rgb(54, 54, 54);
+    padding: 10px;   	    
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-left: 50%;
+}
+.copy{
+    padding: 8px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*button 1------ ----------- */
+#btn1 button{
+    width: 120px;
+    height: 30px;
+    background: aqua;
+    border: 2px solid aqua;
+    cursor: pointer;
+    border-radius:15px;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 9px;
+}
+button a{
+    color:black;
+    text-decoration: none;
+}
+#btn1 a:hover{
+    color: azure;
+}
+/* button 2-------------- */
+#button2 button{
+    width: 120px;
+    height: 30px;
+    background: aqua;
+    border: 2px solid aqua;
+    cursor: pointer;
+    border-radius:15px;
+    font-size: 15px;
+    font-weight: 800;
+   
+}
+#button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button2 button a:hover{
+    color: aliceblue;
+}
